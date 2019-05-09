@@ -1,0 +1,91 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "7449e08a-6dc4-407a-82b5-31bc87486c00": {
+        "id": "7449e08a-6dc4-407a-82b5-31bc87486c00",
+        "parent": null,
+        "name": "eestimc",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "3dbb22c4-43e3-4bc1-af4b-7858d170ff47"
+        ],
+        "isRemovable": false,
+        "filePath": "eestimc"
+      },
+      "3dbb22c4-43e3-4bc1-af4b-7858d170ff47": {
+        "id": "3dbb22c4-43e3-4bc1-af4b-7858d170ff47",
+        "parent": "7449e08a-6dc4-407a-82b5-31bc87486c00",
+        "name": "function.js",
+        "type": "LAMBDA_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "eestimc/function.js",
+        "code": "exports.handler = function(request, response) {\n    \n    response.send({\"message\": \"Successfully executed\"});\n}",
+        "triggers": [
+          {
+            "resourceName": "http-trigger",
+            "config": {}
+          }
+        ],
+        "config": {
+          "runtime": "nodejs8.10",
+          "timeout": 60,
+          "memory": 128,
+          "triggerType": 0
+        }
+      },
+      "d2d43721-5eec-4227-b367-85c268be5879": {
+        "id": "d2d43721-5eec-4227-b367-85c268be5879",
+        "parent": null,
+        "name": "index.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "index.js",
+        "code": "// This file is used to register all your cloud functions in GCP.\n// DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\nexports.eestimcfunction = require(\"./eestimc/function.js\").handler;",
+        "triggers": []
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "7449e08a-6dc4-407a-82b5-31bc87486c00",
+    "openFiles": [
+      "3dbb22c4-43e3-4bc1-af4b-7858d170ff47"
+    ],
+    "currentFileId": "3dbb22c4-43e3-4bc1-af4b-7858d170ff47",
+    "resources": {
+      "http-trigger": {
+        "name": "http-trigger",
+        "type": "http-trigger",
+        "config": {},
+        "globallyEditable": false
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "eestimc",
+    "projectDescription": "minecraft server",
+    "projectVersion": "1.0.0",
+    "projectRegion": "europe-north1",
+    "platform": "GCP",
+    "platformRegions": {},
+    "lastSave": 1557429346502
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "eestimc",
+      "url": "https://github.com/Ats192/eestimc"
+    }
+  }
+}
