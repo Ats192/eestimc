@@ -1,0 +1,2 @@
+# eestimc
+minecraft server
